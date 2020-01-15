@@ -37,14 +37,6 @@ app.get('/help', (req, res) => {
     })
 })
 
-// app.get('/products', (req, res) => {
-//     if (!req.query.search) {
-//         return res.send({error : 'no search term'})
-//     } 
-//      res.send({ products: [] })
-
-// })
-
 app.get('/weather', (req, res) => {
     if (!req.query.address){
         return res.send({error:'no address'})
